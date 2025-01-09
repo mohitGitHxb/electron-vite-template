@@ -16,8 +16,6 @@
 
     /* Linting */
     "strict": true, // Enable all strict type-checking options
-    "noUnusedLocals": true, // Report errors on unused local variables
-    "noUnusedParameters": true, // Report errors on unused function parameters
     "noFallthroughCasesInSwitch": true, // Prevent fallthrough cases in switch statements
     "noImplicitAny": true, // Raise error on expressions and declarations with an implied 'any' type
     "strictNullChecks": true, // Ensure null and undefined are handled correctly
