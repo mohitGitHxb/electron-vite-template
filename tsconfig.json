@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2024", // Keep this as is for modern JavaScript features
+    "useDefineForClassFields": true, // Ensures class fields are defined in the correct order
+    "lib": ["ES2024", "DOM", "DOM.Iterable"], // Include necessary libraries
+    "module": "ESNext", // Use the latest module system
+    "skipLibCheck": true, // Skip type checking of declaration files for faster builds
+
+    /* Bundler mode */
+    "moduleResolution": "bundler", // Use bundler resolution for better compatibility
+    "allowImportingTsExtensions": true, // Allow importing TypeScript files with .ts extensions
+    "resolveJsonModule": true, // Allow importing JSON files
+    "isolatedModules": true, // Ensure each file can be transpiled independently
+    "noEmit": true, // Do not emit output files (useful for development)
+    "jsx": "react-jsx", // Use the new JSX transform for React
+
+    /* Linting */
+    "strict": true, // Enable all strict type-checking options
+    "noUnusedLocals": true, // Report errors on unused local variables
+    "noUnusedParameters": true, // Report errors on unused function parameters
+    "noFallthroughCasesInSwitch": true, // Prevent fallthrough cases in switch statements
+    "noImplicitAny": true, // Raise error on expressions and declarations with an implied 'any' type
+    "strictNullChecks": true, // Ensure null and undefined are handled correctly
+    "strictFunctionTypes": true, // Ensure function type parameters are checked contravariantly
+    "strictBindCallApply": true, // Ensure correct types for bind, call, and apply methods
+    "noImplicitThis": true, // Raise error on 'this' expressions with an implied 'any' type
+    "alwaysStrict": true, // Ensure 'use strict' is always emitted
+    "forceConsistentCasingInFileNames": true // Ensure consistent file naming
+  },
+  "include": ["src", "electron"], // Include source and Electron directories
+  "exclude": ["node_modules", "**/*.spec.ts"], // Exclude node_modules and test files
+  "references": [{ "path": "./tsconfig.node.json" }] // Reference to another tsconfig if needed
+}
