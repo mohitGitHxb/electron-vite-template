@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES2024", // Keep this as is for modern JavaScript features
+    "target": "ES2022", // Keep this as is for modern JavaScript features
     "useDefineForClassFields": true, // Ensures class fields are defined in the correct order
-    "lib": ["ES2024", "DOM", "DOM.Iterable"], // Include necessary libraries
+    "lib": ["ES2022", "DOM", "DOM.Iterable"], // Include necessary libraries
     "module": "ESNext", // Use the latest module system
     "skipLibCheck": true, // Skip type checking of declaration files for faster builds
 
